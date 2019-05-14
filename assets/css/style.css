@@ -1,0 +1,97 @@
+
+
+
+#background {
+    background: url("../image/smash.png");
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Rammetto One', cursive;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color:rgb(247, 185, 109);
+}
+
+h4 {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: rgb(244, 147, 30);
+}
+
+.answers {
+    color:rgb(247, 185, 109);
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+input[type="radio"]{
+    margin: 0 8px 0 8px;
+  }
+
+button {
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+    color:rgb(247, 185, 109);
+    background-color: black;
+    border:5px solid rgb(247, 185, 109);
+    padding: 5px 15px;
+}
+
+#begin {
+    height: 100px;
+    width: 250px;
+    font-size: 50px;
+    margin: 150px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+
+#submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+
+#playagain {
+    margin: 70px auto;
+    width: 200px;
+    padding-bottom: 50px;
+}
+
+.score {
+    text-align: right;
+    padding-right: 2px;
+    font-family: 'Acme', sans-serif;   
+    color:rgb(247, 185, 109);
+    font-size: 30px
+}
+
+h5 {
+    padding: 10px;
+    font-family: 'Acme', sans-serif;   
+    color:rgb(247, 185, 109);
+    font-size: 30px
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 50px
+}
+
+#smallsimba {
+    height: 400px;
+    margin-bottom: 35px;
+}

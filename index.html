@@ -1,0 +1,232 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="background">
+    <audio id="pop">
+        <source src="audio/smw_coin.wav" type="audio/mpeg">
+    </audio>
+    <div class="row begin-game" style="display: none;">
+
+        <div class="container">
+
+            <div class="row">
+                <h1>Nintendo Theme Trivia</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-7">
+                    <button id="begin">BEGIN</button>
+                </div>
+
+                <div class="col-md-5">
+                    <!-- <img src="assets/images/nintendo.png" id="nintendos"> -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="questions" style="display: none;">
+
+        <div class="container">
+
+            <div class="row">
+                <h1>Nintendo Theme Trivia</h1>
+            </div>
+
+            <div class="row" id="timer">
+                <h3>0</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-7">
+
+                    <form id="form">
+
+                        <div class="formquestion1">
+                            <h4>1. In Link to the Past, how many descendants must you save?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="five">Five</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="eight">Eight</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="Seven">Seven</label>
+                            <label class="answers">
+                                <input type="radio" name="question1" value="six">Six</label>
+                        </div><br>
+                        <div class="formquestion2">
+                            <h4>2. Who is Banjo;s partner in crime?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Tootie">Tootie</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Joey">Joey</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="Kazooie">Kazooie</label>
+                            <label class="answers">
+                                <input type="radio" name="question2" value="hootie">Hootie</label>
+                        </div><br>
+                        <div class="formquestion3">
+                            <h4>3. What is the name of the frog from Star Fox?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Slippy">Slippy</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Peppy">Peppy</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Leon">Leon</label>
+                            <label class="answers">
+                                <input type="radio" name="question3" value="Kyrstal">Kyrstal</label>
+                        </div><br>
+                        <div class="formquestion4">
+                            <h4>4. What Mario game did Yoshi first appear?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="SuperMarioBros">Super Mario Bros</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Yoshi">Yoshi Story</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="Mario">Mario 64</label>
+                            <label class="answers">
+                                <input type="radio" name="question4" value="SuperMarioWorld">Super Mario World</label>
+                        </div><br>
+                        <div class="formquestion5">
+                            <h4>5. What is the name of the Orangutan in Donkey Kong 64?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Chunky">Chunky</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Lanky">Lanky</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Tiny">Tiny</label>
+                            <label class="answers">
+                                <input type="radio" name="question5" value="Cranky">Cranky</label>
+                        </div><br>
+                        <div class="formquestion6">
+                            <h4>6. Who seems to always have it out for Kirby?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="MetaKnight">Meta Knight</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="Magolor">Magolor</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="Deedee">Deedee</label>
+                            <label class="answers">
+                                <input type="radio" name="question6" value="Gooey">Gooey</label>
+                        </div><br>
+                        <div class="formquestion7">
+                            <h4>7. What was the fifth console released?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Wii">Wii</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="SegaSaturn">Sega Saturn</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="Gamecube">Gamecube</label>
+                            <label class="answers">
+                                <input type="radio" name="question7" value="SuperNES">SuperNES</label>
+                        </div><br>
+                        <div class="formquestion8">
+                            <h4>8. Which game was release first?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="F-Zero-X">F-Zero-X</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Wario">Wario Woods</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Donkey">Donkey Kong Land</label>
+                            <label class="answers">
+                                <input type="radio" name="question8" value="Pokemon">Pokemon Snap</label>
+                        </div><br>
+                        <div class="formquestion9">
+                            <h4>9. What was the first Multi-Player game on Nintendo?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question9" value="Party">Mario Party</label>
+                            <label class="answers">
+                                <input type="radio" name="question9" value="Stadium">Pokemon Stadium</label>
+                            <label class="answers">
+                                <input type="radio" name="question9" value="Golden">Golden Eye</label>
+                            <label class="answers">
+                                <input type="radio" name="question9" value="Smash">Super Smash Brothers Melee</label>
+                        </div><br>
+                        <div class="formquestion10">
+                            <h4>10. Which was the best selling game?</h4>
+                            <label class="answers">
+                                <input type="radio" name="question10" value="SuperBros">Super Mario Bros</label>
+                            <label class="answers">
+                                <input type="radio" name="question10" value="RGBY">Pokemon RGBY</label>
+                            <label class="answers">
+                                <input type="radio" name="question10" value="Fit">Wii Fit</label>
+                            <label class="answers">
+                                <input type="radio" name="question10" value="Sports">Wii Sports</label>
+                        </div><br>
+                    </form>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+                <div class="row">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Trivia -->
+
+    <div class="end-game" style="">
+        <div class="container">
+            <div class="row">
+                <hi>Game Over!!</hi>
+            </div>
+            <div class="row" id="scoretable">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="score">Correct:</td>
+                            <td id="correct">
+                                <h5>0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="score">Incorrect:</td>
+                            <td id="incorrect">
+                                <h5>0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="score">Missed:</td>
+                            <td id="missed">
+                                <h5>10</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row" id="playagain">
+                <button>Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
