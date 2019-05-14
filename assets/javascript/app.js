@@ -43,8 +43,8 @@ $(document).ready(function () {
         var q6 = $('input[name=question6]:checked','#form').val()
         var q7 = $('input[name=question7]:checked','#form').val()
         var q8 = $('input[name=question8]:checked','#form').val()
-        var q9 = $('input[name=question7]:checked','#form').val()
-        var q10 = $('input[name=question8]:checked','#form').val()
+        var q9 = $('input[name=question9]:checked','#form').val()
+        var q10 = $('input[name=question10]:checked','#form').val()
             
         var numberCorrect = 0
         var numberWrong = 0
